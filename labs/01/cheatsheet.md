@@ -187,15 +187,99 @@ You can use the `git status` command to check your repository.
 ### 11. Link to a Section
 [Jump to Lists](#lists)
 
+### 12. Image with Alt Text
+/github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+
+### 13. Image as a Link
+[![GitHub logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/)
 
 ## Code
+### 14. Fenced Code Blocks and Syntax Highlighting
+```python
+print("Hello, world!")
+```
+
+```bash
+python --version
+```
+
+```json
+{"name": "Ulku", "semester": 3}
+```
 
 ## Quotes
+### 15. Blockquotes, Nested Quotes, and Formating
+> Data needs context.
+> **Important:** Always check your sources.
+>
+>> This is a nested quote with *italic text*.
+
+### 16. Alerts
+> [!NOTE]
+> Check the licence before reusing a dataset.
+
 
 ## Tables
+### 17. Aligned Columns, Links, and a Pipe Inside a Cell
+| Tool | Purpose | Example |
+| :--- | :---: | ---: |
+| [Python](https://python.org/) | Analysis | 1 |
+| SQL | Query A \| B | 2 |
 
 ## Layout
+### 18. Horizontal Rules
+Above the line.
+
+---
+
+Below the line.
+
+### 19. Collapsible Sections
+<details>
+<summary>Show hint</summary>
+
+This text is hidden until you expand it.
+
+</details>
+
+### 20. Comments That Do Not Render
+Visible text.
+
+<!-- This note is not visible in the preview. -->
 
 ## GitHub Extras
+### 21. Footnotes
+Open data needs clear documentation.[^source]
+
+[^source]: See the dataset's metadata and licence.
+
+### 22. Emoji Shortcodes
+:smile: :rocket:
+
+### 23. Mentions and Issue References
+@breuert
+
+#1
+
+### 24. Mermaid Diagram
+```mermaid
+flowchart TD
+    A[Start] --> B[Collect Data]
+    B --> C[Clean Data]
+    C --> D[Analyze Data]
+    D --> E[Visualize Results]
+    E --> F[End]
+```
+### 25. Mathematical Formula
+The mean is $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$.
+
 
 ## Pitfalls
+These are examples of problems worth testing. Replace or adapt them to describe at least three things you personally observed during your tests.
+1. Single line break disappeared: Pressing Enter once did not consistently make a visible line break. Fix: I used two trailing spaces or <br>
+
+2. Pipe split a table cell: Writing A | B inside a cell created an extra column. Fix: I escaped the pipe as A \| B.
+
+3. Issue reference did not link: Writing #1 did not produce a usable issue link when issue 1 did not exist. Fix: I checked the issue number and used an existing issue reference when available.
+
+4. GitHub extensions differed from CommonMark: Tables, alerts, and Mermaid did not render the same way in the CommonMark reference renderer. Fix: I labeled them as GitHub features and compared both renderers.
