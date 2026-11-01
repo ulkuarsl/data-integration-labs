@@ -43,3 +43,20 @@ I followed the instructions to create the repository, add topics, select the MIT
 ##### Verification:
 
 I checked the repository structure on GitHub and confirmed that the README, LICENSE and Markdown cheat sheet file were created.
+
+### Task 4 - Look inside an open source project
+**Date:** 01 October 2026
+
+**Tool and Model:** ChatGPT (OpenAI, Gpt-6)
+
+**Prompts (summarized):**
+
+- What does `spdx_id` mean?
+- What does it mean if no license being shown?
+- How to contribute to pandas project?
+
+### How I used AI:
+
+In this context I used ChatGPT to understand what i was dealing with and how
+to deal with certain points that were missing, such as no license being shown.
+
