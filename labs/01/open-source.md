@@ -27,7 +27,7 @@ I also cannot use the names of the copyright holdersor contributors to promote m
 GitHub provides licence information through its API. The `spdx_id` field identifies
 a license using a standardized code.
 
-**pandas**  
+**Pandas**  
 **API:** [pandas GitHub API](https://api.github.com/repos/pandas-dev/pandas)  
 **SPDX ID:** `BSD-3-Clause`
 This means that GitHub identifies pandas as a project using the BSD 3-Clause License.
@@ -35,9 +35,28 @@ This means that GitHub identifies pandas as a project using the BSD 3-Clause Lic
 **My Lab Repository**  
 **API:** [My GitHub API](https://api.github.com/repos/ulkuarsl/data-integration-labs)
 **SPDX ID:** `MIT`  
-This means that GitHub
+This means that GitHub should recognize my repository as using the MIT License.
+
+**Our World in Data***
+**API:** [OWID GitHub API](https://api.github.com/repos/owid/co2-data)
+**SPDX ID:** `null`  
+The GitHub API does not identify a license for this repository.  
+However, the README states thet content produced by Our WOrld in Data is available under a Creative Commons Attribution (CC BY) license.
+**Source:** [OWID CO2 Data README](https://github.com/owid/co2-data#license)
 
 ## 3. Community Files
+
+The pandas project provides the follwing community files:
+
+| File | Available | Purpose |
+|------|-----------|---------|
+| README | Yes | Introduces the project and explains its purpose. |
+| LICENSE | Yes | Explains the legal conditions for using and sharing the code. |
+| CONTRIBUTING | Yes | Explains how developers can contribute to the project. |
+| CODE_OF_CONDUCT | Yes | Definies rules for respectful behavior in the community |
+
+
+
 
 ## 4. People
 
