@@ -308,3 +308,163 @@ When publishing our own dataset for Milestone 2, I would improve three things:
 3. **Better interoperability:** I would use standardized date formats and identifiers, and provide links to the original data sources.
 
 These improvements would make our dataset easier to find, understand, combine and reuse.
+
+## Task 8 – Plan What to Combine It With
+
+### 1. Second Data Source
+
+For my Data Integration project, I would like to combine my selected dataset with another dataset about cinema attendance in German cities.
+
+**Dataset 1:** [Kinos und Filmbesucher](https://www.govdata.de/suche/daten/kinos-und-filmbesucher)
+
+**Dataset 2:** [Kinos und Filmbesucher im Großstadtvergleich](https://www.govdata.de/suche/daten/kinos-und-filmbesucher-im-grossstadtvergleich)
+
+**Publisher:** Statistisches Amt der Landeshauptstadt Stuttgart
+
+**Original Data Source:** Filmförderungsanstalt (FFA)
+
+**Format:** CSV
+
+**Licence:** CC BY 4.0
+
+The first dataset contains historical cinema statistics for Stuttgart.
+
+The second dataset contains information about cinema attendance, cinema locations, screens and seats in selected major German cities.
+
+I chose this second dataset because I want to compare the development of cinema attendance in Stuttgart with other German cities.
+
+### 2. Shared Key
+
+To combine two datasets, they need at least one common key.
+
+Both datasets contain annual cinema statistics, so the year can be used as a shared key.
+
+The first dataset contains the column `Jahr`, and the second dataset also provides annual observations.
+
+However, the exact column names and structure of the second CSV still need to be checked.
+
+#### Possible Matching Years
+
+The following table shows three years that fall within the reported time coverage of both datasets.
+
+| Dataset 1: Stuttgart | Dataset 2: Großstadtvergleich |
+|---|---|
+| 1997 | 1997 |
+| 2000 | 2000 |
+| 2024 | 2024 |
+
+These years are possible matching keys. The values in the second CSV still need to be checked.
+
+For a correct comparison, I would also need to select Stuttgart from the second dataset and match equivalent indicators, such as cinema visits.
+
+The category names and measurement units might be different, so they may need to be standardized before combining the datasets.
+
+### 3. Granularity
+
+The two datasets have similar temporal granularity because both provide annual statistics.
+
+However, their geographical coverage is different.
+
+| Feature | Dataset 1 | Dataset 2 |
+|---|---|---|
+| Geographical coverage | Stuttgart | Selected German cities |
+| Time coverage | 1981–2024 (downloaded CSV) | 1997–2025 (portal metadata) |
+| Temporal granularity | Annual | Annual |
+| Main indicators | Cinemas, screens, seats, visits | Cinema locations, screens, seats, visits |
+
+To align the datasets, I would:
+
+1. Select the overlapping years.
+2. Compare the available cities and indicators.
+3. Standardize the column names.
+4. Check that the values use the same measurement units.
+5. Combine the datasets using the year and, where appropriate, the city and indicator.
+
+One important limitation is that the second dataset only includes selected major cities.
+
+Additionally, the inclusion criteria changed in 2022. This needs to be considered when comparing cities over time.
+
+### 4. Research Questions
+
+By combining these two datasets, I would like to answer the following questions:
+
+**Research Question 1:**
+
+How does the development of cinema attendance in Germany looks like pre versus post COVID-19 pandemic?
+
+**Research Question 2:**
+
+Is cinema culture returning to German culture after the rise of streaming platforms?
+
+**Research Question 3:**
+
+Does the relationship between the number of cinema screens and cinema visits differ between Stuttgart and other major German cities?
+
+These questions require information from both datasets because the first dataset focuses on Stuttgart, while the second provides a comparison with other cities.
+
+### 5. Licences
+
+Both datasets are published under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence.
+
+This licence allows the data to be copied, modified, combined and redistributed.
+
+However, the original publishers must be credited, the licence must be linked and any modifications must be indicated.
+
+Since both datasets use CC BY 4.0, they can be combined and the resulting dataset can be published, provided that the attribution requirements are respected.
+
+#### Attribution
+
+**Dataset 1:**
+
+"Kinos und Filmbesucher", Statistisches Amt der Landeshauptstadt Stuttgart, based on FFA data, [Source](https://www.govdata.de/suche/daten/kinos-und-filmbesucher), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+**Dataset 2:**
+
+"Kinos und Filmbesucher im Großstadtvergleich", Statistisches Amt der Landeshauptstadt Stuttgart, based on FFA data, [Source](https://www.govdata.de/suche/daten/kinos-und-filmbesucher-im-grossstadtvergleich), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+Any cleaning, transformation or combination of the original data would also be documented.
+
+### 6. Next Steps – Data Integration
+
+To combine the two datasets, I would follow these steps:
+
+1. **Download:** Download both CSV files from their original publisher.
+2. **Inspect:** Open the files and examine their columns and data types.
+3. **Clean:** Check missing values, zero values and possible inconsistencies.
+4. **Standardize:** Make sure years, city names, indicators and units are consistent.
+5. **Filter:** Select the relevant years and cities.
+6. **Join:** Combine the datasets using suitable shared keys.
+7. **Validate:** Check whether the merged dataset contains duplicates or missing matches.
+8. **Analyze:** Compare cinema attendance trends across cities.
+
+#### Mermaid Flowchart
+
+```mermaid
+flowchart TD
+    A["Dataset 1: Stuttgart"] --> C["Inspect and Clean"]
+    B["Dataset 2: German Cities"] --> C
+    C --> D["Standardize Data"]
+    D --> E["Select Common Years and Indicators"]
+    E --> F["Join Datasets"]
+    F --> G["Validate Results"]
+    G --> H["Analyze Cinema Trends"]
+```
+
+The flowchart shows the planned data integration process from downloading the datasets to analyzing the combined data.
+
+### 7. Verdict
+
+I would use the Stuttgart dataset as a starting point for my project because it provides historical cinema attendance data in an open and machine-readable format.
+
+Combining it with the Großstadtvergleich dataset would allow me to compare Stuttgart with other German cities and investigate differences in cinema attendance trends.
+
+Later on i would another dataset that is going to be showing the rise of streaming platforms in Germany to compare two aspects.
+
+The biggest risk is that some values may be missing or inconsistent and that the geographical coverage and selection criteria of the second dataset change over time.
+
+### 8. Sources
+
+- [Kinos und Filmbesucher – GovData](https://www.govdata.de/suche/daten/kinos-und-filmbesucher)
+- [Kinos und Filmbesucher im Großstadtvergleich – GovData](https://www.govdata.de/suche/daten/kinos-und-filmbesucher-im-grossstadtvergleich)
+- [OpenData Stuttgart](https://opendata.stuttgart.de/)
+- [Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
