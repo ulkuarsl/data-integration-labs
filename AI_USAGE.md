@@ -60,3 +60,18 @@ I checked the repository structure on GitHub and confirmed that the README, LICE
 In this context I used ChatGPT to understand what i was dealing with and how
 to deal with certain points that were missing, such as no license being shown.
 
+
+### Task 5-8
+**Date:** 02 October 2026
+
+**Tool and Model:** ChatGPT (OpenAI, Gpt-6)
+
+**Prompts (summarized):**
+
+- How do I find the licence fot a whole data set and each file?
+- How can I analyse my dataset in python?
+- What does the certain parts of this analyse exactly mean?
+- How can I connect two different datasets?
+
+### How I used AI:
+I mostly used ChatGPT to understand the steps of the analyse as it was my first time analysing a dataset with python. And I also used it to understand hte results just so I can comment on them based with a better knowledge.
