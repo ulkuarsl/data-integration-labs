@@ -70,35 +70,72 @@ After terminating the sleep process with `kill`, the first terminal returns to t
 The command `ps -ef | grep sleep` shows two processes because it finds both the running `sleep`
 process and the `grep sleep` command itself.
 
-## Task 2 - bashcrawl
-````
-$ cd ~
-$ mkdir -p labs/02
-$ cd labs/02
-$ curl -L -O https://gitlab.com/slackermedia/bashcrawl/-/archive/master/bashcrawl-master.zip
-  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
-                                 Dload  Upload  Total   Spent   Left   Speed
-100  74304   0  74304   0      0 120.8k      0                              0
-$ unzip -q bashcrawl-master.zip
-$ cd bashcrawl-master/entrance
-$ ls
-$ cat scroll
-````
-It is pitch black in these catacombs.
-You have a magickal spell that lists all items in a room.
+## Task 2 – Bashcrawl
 
-To see in the dark, type:     ls
-To move around, type:         cd <directory>
+### 1. Inventory
 
-Try looking around this room.
-Then move into one of the next rooms.
+**Command:**
 
-EXAMPLE:
+```bash
+echo $I
+```
 
-$ ls
-$ cd cellar
+**Output:**
 
-Remember to cast ``ls`` when you get into the next room!
+```text
+goldcoins,braceler,silverkeys,crown,sword,amulet,,
+```
 
+**Answer:**
 
+During the Bashcrawl game, I collected several items, including gold coins, silver keys, a crown, a sword and an amulet.
 
+This is my current inventory. I have not yet reached the final room.
+
+### 2. Three commands I learned
+
+During the game, I learned several new Bash commands.
+
+**Command 1: `export`**
+
+```bash
+export HP=15
+```
+
+The `export` command creates or updates an environment variable. I used it to store my health points.
+
+**Command 2: `ln -s`**
+
+```bash
+ln -fs ../../../chapel/courtyard/aviary/hall portal
+```
+
+The `ln -s` command creates a symbolic link to another file or directory. In Bashcrawl, I used it to create a portal to another room.
+
+**Command 3: `let`**
+
+```bash
+let "HP=HP-5"
+```
+
+The `let` command performs arithmetic operations in Bash. I used it to subtract five health points after fighting a statue.
+
+### 3. Difference between a monster and a scroll
+
+**Command:**
+
+```bash
+ls -l
+```
+
+**Output:**
+
+```text
+[Insert your actual ls -l output from a room with a monster here]
+```
+
+**Answer:**
+
+A monster is an executable file, while a scroll is a regular text file.
+
+The difference can be seen in the file permissions. Monsters have execute permission (`x`), while scrolls normally have read permission but no execute permission.
