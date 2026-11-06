@@ -1,0 +1,132 @@
+cd bashcrawl-master/entrance
+ls
+cat scroll
+ls
+cd cellar
+ls
+cat treasure
+cd armoury
+ls -aF
+cat scroll
+cd ..
+./treasure
+export I=amulet,$I
+echo $I
+cd armoury
+ls -aF
+./treasure
+export I=sword,$I
+echo $I
+cat potion
+./treasure
+./potion
+export HP=15
+echo $HP
+./treasure
+cd chamber
+ls -aF
+cat scroll
+ls -l
+pwd
+./spell
+ln -fs ../../../chapel/courtyard/aviary/hall portal
+ls -aF
+cd portal
+ls -aF
+ls -l
+less monster
+./monster
+echo $I
+echo$HP
+echo $HP
+cd library
+ls -aF
+cat scroll
+./tome
+cd ..
+ls -aF
+./treasure
+export I=crown,$I
+echo $I
+./carcass
+ls -la
+./trasure
+./treasure
+cd ..
+ls -aF
+./statue
+let "HP=HP-5
+"
+echo $HP
+ls -aF
+./piecea
+-/pieces
+./pieces
+cd ..
+ls -aF
+cd ..
+ls -aF
+./treasure
+cd ..
+ls -aF
+ls -la
+cd chapel
+ls -aF
+cat scroll
+./altar
+n
+cd graveyard
+ls -aF
+cat scroll
+./padlock
+cat scroll
+cd .mausoleum
+ls -aF
+cat scroll
+cat spell
+ls -l
+ls -l room
+pwd > ~labs/02/last_location.txt
+pwd > ~labs/02/last_location.txt
+pwd > ~/labs/02/last_location.txt
+echo "export I='$I'" > ~/labs/02/save_game.sh
+echo "export HP='$HP'" >> ~/labs/02/save_game.sh
+history > ~/labs/02/history.txt
+ls -l ~/labs/02/*.txt ~/labs/02/*.sh
+cd "$(cat ~/labs/02/last_location.txt)"
+pwd
+source ~/labs/02/save_game.sh
+echo $I
+echo $HP
+sort room | uniq
+./loot
+export I=goldcoins,braceler,silverkeys,$I,
+echo $I
+cd ..
+ls -aF
+cd royal-tombs
+ls -aF
+cat scroll
+cat sign
+cat royals
+head -n 20 royals
+grep King royals
+grep -c King royals
+less statues
+export I=7432,\$I
+./statues
+cd ..
+cd columbarium
+cd columbarium
+ls -aF
+cat scroll
+pwd
+find ~/labs/02/bashcrawl-master -name end -print
+find ~/labs/02/bashcrawl-master -type d
+find ~/labs/02/bashcrawl-master/entrance -type f | grep -Ei 'monster|boss|dragon|end|final'
+cd ~/labs/02/bashcrawl-master/entrance/vault
+ls -aF
+cat scroll
+ls -aF
+la -1
+ls -l
