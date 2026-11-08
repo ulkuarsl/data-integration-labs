@@ -1,5 +1,7 @@
 # AI Usage Documentation
 
+## Lab 1
+
 This file documents how I used AI tools while working on my Data Integration lab assignments.
 
 ## Task 1 – GitHub Profile README
@@ -75,3 +77,26 @@ to deal with certain points that were missing, such as no license being shown.
 
 ### How I used AI:
 I mostly used ChatGPT to understand the steps of the analyse as it was my first time analysing a dataset with python. And I also used it to understand hte results just so I can comment on them based with a better knowledge.
+
+
+## Lab 2 – Command Line Interface
+
+**AI Tool:** ChatGPT (OpenAI, Gpt-6)
+
+**How I used AI:**
+
+I used ChatGPT to help me understand the tasks and learn how to use Git Bash commands.
+
+- **Task 1:** Helped me understand shell commands and how to document their outputs.
+- **Task 2:** Explained Bashcrawl instructions, helped me navigate the game and organize my command history.
+- **Task 3:** Helped me write and understand commands for analyzing the journal datasets and interpret the results.
+- **Task 4:** Helped me create and debug the `get_data.sh` script using my dataset from Lab 1.
+- **Task 5:** Helped me evaluate the safety of terminal commands and formulate explanations.
+
+**My own contribution:**
+
+I executed the commands myself, checked the outputs and worked with my own dataset. I used ChatGPT mainly for explanations, troubleshooting and help with writing the Markdown documentation.
+
+**Reflection:**
+
+ChatGPT was helpful for understanding unfamiliar commands and fixing errors. I learned that AI-generated commands should always be checked before running them, especially when they can modify or delete files.
