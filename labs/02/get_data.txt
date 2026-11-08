@@ -1,0 +1,12 @@
+== Size
+-rw-r--r-- 1 ulku1 197611 8.0K Nov  8 14:24 data/raw/stuttgart_kino.csv
+== Type and Encoding
+data/raw/stuttgart_kino.csv: Unicode text, UTF-8 text, with CRLF line terminators
+== Lines
+265
+== Columns
+3
+== First three lines
+Jahr;Kategorie;Wert
+1981;Kinotheater;0,00
+1982;Kinotheater;0,00
