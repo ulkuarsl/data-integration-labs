@@ -55,3 +55,6 @@ head -n 3 "$TARGET"
 # The script reports 265 lines because the CSV also contains
 # one header row. Therefore, the results are consistent.
 # The file uses UTF-8 encoding and CRLF line endings.
+
+echo "== Checksum"
+git hash-object --no-filters "$TARGET"
