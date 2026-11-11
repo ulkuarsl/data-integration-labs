@@ -21,7 +21,7 @@
 # https://opendata.stuttgart.de/dataset/kinos-und-filmbesucher
 
 # Download URL and target file
-URL="https://opendata.stuttgart.de/dataset/6ba6a607-4490-48ad-8b7d-4318e2b36433/resource/8baa9317-34bb-4060-87a1-16261ce9af62/download/kinos_und_filmbesucher_in_stuttgart_seit_1981.csv.broken"
+URL="https://opendata.stuttgart.de/dataset/6ba6a607-4490-48ad-8b7d-4318e2b36433/resource/8baa9317-34bb-4060-87a1-16261ce9af62/download/kinos_und_filmbesucher_in_stuttgart_seit_1981.csv"
 
 TARGET="data/raw/stuttgart_kino.csv"
 
