@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Downloads cinema attendance data from Stuttgart Open Data.
+# Usage: Run from the repository root with ./labs/03/get_data.sh
 
 # Task 4 - Download and inspect cinema attendance data
 #
