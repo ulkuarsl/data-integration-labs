@@ -188,3 +188,61 @@ ChatGPT helped me understand unfamiliar Git commands and organize the documentat
 The most useful part was learning how to recover from mistakes without losing my work.
 
 I also learned that Git commands can affect files and commit history, so it is important to understand their purpose and verify the results rather than blindly following AI-generated instructions.
+
+## Lab 4 – Agentic Coding
+
+### Task 1 – Set up your Agent
+
+**Date:** 15 November 2026
+
+**Tools and Models:**
+- GitHub Copilot Chat (VS Code 1.144.0, Auto model selection; GPT-6 Luna was displayed in one session)
+- ChatGPT (OpenAI, GPT-6)
+
+### Prompts (summarized)
+
+**GitHub Copilot:**
+- What files are in this folder? Do not change anything.
+- Create a file `hello.txt` with the line Hello.
+- Run `git log`.
+- Add a script that counts the files in this folder. Show me your plan only. Do not create or modify any files.
+
+**ChatGPT:**
+- How do I set up GitHub Copilot in VS Code?
+- How can I configure manual permissions for file changes?
+- How can I check which actions Copilot performs without asking?
+- How should I document my results in `setup.md`?
+
+### How I used AI
+
+I used GitHub Copilot to test how an AI coding agent interacts with files and terminal commands.
+
+During the first test, Copilot listed the repository contents without asking for permission. It also created `hello.txt` without requesting confirmation.
+
+After I changed the auto-approval settings in VS Code, Copilot asked for permission before creating the file.
+
+Copilot executed `git log` without asking for confirmation. I also tested the planning mode, where Copilot proposed a PowerShell script to count files. I reviewed and rejected the plan without implementing it.
+
+I used ChatGPT to understand the assignment, configure VS Code, interpret the results and prepare the Markdown documentation.
+
+### My own contribution
+
+I created the test repository, executed the Git commands, changed the VS Code settings and tested Copilot's permission behavior.
+
+I reviewed the agent's actions and decided which changes to accept or reject.
+
+I also checked the GitHub privacy settings and verified that AI model training was disabled.
+
+### Verification
+
+I used `git status` to check whether Copilot had created or modified files.
+
+I checked the Git history and confirmed that Copilot correctly identified the initial commit.
+
+After rejecting the implementation plan and undoing the temporary file changes, I verified that the repository was clean.
+
+I also checked the GitHub billing page. It showed no metered usage for November 2026, but it did not provide the exact number of AI requests used.
+
+### Reflection
+
+This task helped me understand that an AI coding agent can read files and execute some commands without asking for permission. I learned how to configure approval settings and review file changes before accepting them. The most important lesson was that manual permissions do not automatically prevent every action, so I should always check what the agent actually does.
